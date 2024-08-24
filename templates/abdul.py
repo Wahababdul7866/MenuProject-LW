@@ -620,7 +620,7 @@ def get_weather(city):
 
 def get_air_quality(city):
     """Fetches air quality data from PurpleAir API."""
-    api_key = "8BB89239-33EA-11EF-95CB-42010A80000E"  # Replace with your PurpleAir API key
+    api_key = ""  # Replace with your PurpleAir API key
     base_url = "https://api.purpleair.com/v1/sensors"
     complete_url = f"{base_url}?api_key={api_key}&location={city}"
     response = requests.get(complete_url)
@@ -662,7 +662,7 @@ def humanize_bytes(bytes):
 
 def get_movie_recommendations(query):
     """Fetches movie recommendations from TMDb."""
-    api_key = "0ccbd7354a881d9263ef3a3b432c5cbd"  # Get a free TMDb API key from https://developer.themoviedb.org/docs/getting-started
+    api_key = ""  # Get a free TMDb API key from https://developer.themoviedb.org/docs/getting-started
     base_url = "https://api.themoviedb.org/3/search/movie"
     params = {"api_key": api_key, "query": query}
     response = requests.get(base_url, params=params)
