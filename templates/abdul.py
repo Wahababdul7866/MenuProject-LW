@@ -603,7 +603,7 @@ def pollution_prediction1():
 
 def get_weather(city):
     """Fetches weather data from OpenWeatherMap API."""
-    api_key = "8d368aea9894b030e5b4c2b7aca2c515"  # Replace with your OpenWeatherMap API key
+    api_key = ""  # Replace with your OpenWeatherMap API key
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     complete_url = base_url + "appid=" + api_key + "&q=" + city
     response = requests.get(complete_url)
